@@ -56,7 +56,7 @@ class TweetDfExtractor:
             polarity += [t_blob.polarity]
             subjectivity += [t_blob.subjectivity]
     
-        return polarity, self.subjectivity
+        return polarity, subjectivity
    
 
     def find_created_time(self)->list:
