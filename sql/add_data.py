@@ -209,7 +209,7 @@ def db_execute_fetch(*args, many=False, tablename='', rdf=True, **kwargs) -> pd.
 
 if __name__ == "__main__":
     createDB(dbName='tweets')
-    #emojiDB(dbName='tweets')
+    emojiDB(dbName='tweets')
     createTables(dbName='tweets')
 
     processed_tweet_df = pd.read_csv('../data/processed_tweet_data.csv')
