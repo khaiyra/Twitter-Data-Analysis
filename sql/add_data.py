@@ -15,7 +15,7 @@ def DBConnect(dbName=None):
     -------
 
     """
-    conn = mysql.connect(host='localhost', user='root', password='khairatayinde',
+    conn = mysql.connect(host='localhost', user='root', password='',
                          database=dbName, buffered=True)
     cur = conn.cursor()
     return conn, cur
@@ -64,7 +64,7 @@ def createTables(dbName: str) -> None:
 
     """
     conn, cur = DBConnect(dbName)
-    sqlFile = 'day5_schema.sql'
+    sqlFile = 'schema.sql'
     fd = open(sqlFile, 'r')
     readSqlFile = fd.read()
     fd.close()
